@@ -24,38 +24,44 @@
   </head>
   <body>
     <!--Шапка страницы-->
-    <header class="header">
-      <div class="container">
-        <a class="logo link animate__swing" lang="en" href="./index.html"
-          >Web<span class="logo-header-part">Studio</span></a
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a
+          class="logo page-header__logo link animate__swing"
+          lang="en"
+          href="./index.html"
+          >Web<span class="logo__part">Studio</span></a
         >
+
         <nav class="site-nav">
-          <ul class="list">
-            <li class="list-item">
-              <a class="link action" href="./index.html">Студия</a>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a class="site-nav__link link" href="./index.html">Студия</a>
             </li>
-            <li class="list-item">
-              <a class="link action current" href="./portfolio.html"
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current link"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="list-item">
-              <a class="link action" href="">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list header-contacts">
-          <li class="list-item">
-            <a class="link action" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16" height="12">
+        <ul class="contacts list list">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="list-item">
-            <a class="link action" href="tel:+380961111111">
-              <svg class="contacts-icon" width="10" height="16">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -67,32 +73,32 @@
 
     <main>
       <!-- Портфолио -->
-      <section class="projects">
+      <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">
             Проекты компании <span lang="en">Web Studio</span>
           </h1>
-          <ul class="projects-filter list">
-            <li class="filter-list-item">
-              <button class="filter-btn" type="button">Все</button>
+          <ul class="filter list">
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Все</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-btn" type="button">Веб-сайты</button>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Веб-сайты</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-btn" type="button">Приложения</button>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Приложения</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-btn" type="button">Дизайн</button>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Дизайн</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-btn" type="button">Маркетинг</button>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="projects-list list">
-            <li class="projects-list-item">
-              <a class="link focus" href="">
+          <ul class="projects list">
+            <li class="project__item">
+              <a class="project__link link" href="">
                 <div class="overlay-wrap">
                   <img
                     src="./images/portfolio/project-img-1.jpg"
@@ -100,20 +106,20 @@
                     width="370"
                     height="294"
                   />
-                  <p class="overlay-text">
+                  <p class="overlay-wrap__text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="projects-item-thumb">
-                  <h2 class="project-title">Технокряк</h2>
-                  <p class="project-text">Веб-сайт</p>
+                <div class="project__box">
+                  <h2 class="project__name">Технокряк</h2>
+                  <p class="project__category">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="projects-list-item">
-              <a class="link" href="">
+            <li class="project__item">
+              <a class="project__link link" href="">
                 <div class="overlay-wrap">
                   <img
                     src="./images/portfolio/project-img-2.jpg"
@@ -121,23 +127,23 @@
                     width="370"
                     height="294"
                   />
-                  <p class="overlay-text">
+                  <p class="overlay-wrap__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt id dignissimos ratione corporis atque voluptate
                     quae quidem placeat animi totam.
                   </p>
                 </div>
 
-                <div class="projects-item-thumb">
-                  <h2 class="project-title">
+                <div class="project__box">
+                  <h2 class="project__name">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="project-text">Дизайн</p>
+                  <p class="project__category">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="projects-list-item">
-              <a class="link" href="">
+            <li class="project__item">
+              <a class="project__link link" href="">
                 <div class="overlay-wrap">
                   <img
                     src="./images/portfolio/project-img-3.jpg"
@@ -145,22 +151,22 @@
                     width="370"
                     height="294"
                   />
-                  <p class="overlay-text">
+                  <p class="overlay-wrap__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt id dignissimos ratione corporis atque voluptate
                     quae quidem placeat animi totam.
                   </p>
                 </div>
-                <div class="projects-item-thumb">
-                  <h2 class="project-title">
+                <div class="project__box">
+                  <h2 class="project__name">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="project-text">Приложение</p>
+                  <p class="project__category">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="projects-list-item">
-              <a class="link" href="">
+            <li class="project__item">
+              <a class="project__link link" href="">
                 <div class="overlay-wrap">
                   <img
                     src="./images/portfolio/project-img-4.jpg"
@@ -168,23 +174,23 @@
                     width="370"
                     height="294"
                   />
-                  <p class="overlay-text">
+                  <p class="overlay-wrap__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt id dignissimos ratione corporis atque voluptate
                     quae quidem placeat animi totam.
                   </p>
                 </div>
 
-                <div class="projects-item-thumb">
-                  <h2 class="project-title">
+                <div class="project__box">
+                  <h2 class="project__name">
                     Проект <span lang="en">Prime</span>
                   </h2>
-                  <p class="project-text">Маркетинг</p>
+                  <p class="project__category">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="projects-list-item">
-              <a class="link" href="">
+            <li class="project__item">
+              <a class="project__link link" href="">
                 <div class="overlay-wrap">
                   <img
                     src="./images/portfolio/project-img-5.jpg"
@@ -192,23 +198,23 @@
                     width="370"
                     height="294"
                   />
-                  <p class="overlay-text">
+                  <p class="overlay-wrap__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt id dignissimos ratione corporis atque voluptate
                     quae quidem placeat animi totam.
                   </p>
                 </div>
 
-                <div class="projects-item-thumb">
-                  <h2 class="project-title">
+                <div class="project__box">
+                  <h2 class="project__name">
                     Проект <span lang="en">Boxes</span>
                   </h2>
-                  <p class="project-text">Приложение</p>
+                  <p class="project__category">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="projects-list-item">
-              <a class="link" href="">
+            <li class="project__item">
+              <a class="project__link link" href="">
                 <div class="overlay-wrap">
                   <img
                     src="./images/portfolio/project-img-6.jpg"
@@ -216,23 +222,23 @@
                     width="370"
                     height="294"
                   />
-                  <p class="overlay-text">
+                  <p class="overlay-wrap__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt id dignissimos ratione corporis atque voluptate
                     quae quidem placeat animi totam.
                   </p>
                 </div>
 
-                <div class="projects-item-thumb">
-                  <h2 class="project-title" lang="en">
+                <div class="project__box">
+                  <h2 class="project__name" lang="en">
                     Inspiration has no Borders
                   </h2>
-                  <p class="project-text">Веб-сайт</p>
+                  <p class="project__category">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="projects-list-item">
-              <a class="link" href="">
+            <li class="project__item">
+              <a class="project__link link" href="">
                 <div class="overlay-wrap">
                   <img
                     src="./images/portfolio/project-img-7.jpg"
@@ -240,23 +246,23 @@
                     width="370"
                     height="294"
                   />
-                  <p class="overlay-text">
+                  <p class="overlay-wrap__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt id dignissimos ratione corporis atque voluptate
                     quae quidem placeat animi totam.
                   </p>
                 </div>
 
-                <div class="projects-item-thumb">
-                  <h2 class="project-title">
+                <div class="project__box">
+                  <h2 class="project__name">
                     Издание <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="project-text">Дизайн</p>
+                  <p class="project__category">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="projects-list-item">
-              <a class="link" href="">
+            <li class="project__item">
+              <a class="project__link link" href="">
                 <div class="overlay-wrap">
                   <img
                     src="./images/portfolio/project-img-8.jpg"
@@ -264,23 +270,23 @@
                     width="370"
                     height="294"
                   />
-                  <p class="overlay-text">
+                  <p class="overlay-wrap__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt id dignissimos ratione corporis atque voluptate
                     quae quidem placeat animi totam.
                   </p>
                 </div>
 
-                <div class="projects-item-thumb">
-                  <h2 class="project-title">
+                <div class="project__box">
+                  <h2 class="project__name">
                     Проект <span lang="en">LAB</span>
                   </h2>
-                  <p class="project-text">Маркетинг</p>
+                  <p class="project__category">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="projects-list-item">
-              <a class="link" href="">
+            <li class="project__item">
+              <a class="project__link link" href="">
                 <div class="overlay-wrap">
                   <img
                     src="./images/portfolio/project-img-9.jpg"
@@ -288,16 +294,16 @@
                     width="370"
                     height="294"
                   />
-                  <p class="overlay-text">
+                  <p class="overlay-wrap__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Incidunt id dignissimos ratione corporis atque voluptate
                     quae quidem placeat animi totam.
                   </p>
                 </div>
 
-                <div class="projects-item-thumb">
-                  <h2 class="project-title" lang="en">Growing Business</h2>
-                  <p class="project-text">Приложение</p>
+                <div class="project__box">
+                  <h2 class="project__name" lang="en">Growing Business</h2>
+                  <p class="project__category">Приложение</p>
                 </div>
               </a>
             </li>
@@ -307,53 +313,57 @@
     </main>
 
     <!--Подвал страницы-->
-    <footer class="footer">
-      <div class="container">
+    <footer class="page-footer">
+      <div class="container page-footer__container">
         <div>
-          <a class="logo link animate__swing" href="./index.html"
-            >Web<span class="logo-footer-part">Studio</span></a
+          <a
+            class="logo page-footer__logo link animate__swing"
+            href="./index.html"
+            >Web<span class="logo__part logo__part--inverse">Studio</span></a
           >
           <address class="address">
-            <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list footer-contacts">
-              <li class="item">
-                <a class="link" href="mailto:info@example.com"
+            <p class="address__description">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="address__list list">
+              <li class="address__item">
+                <a class="address__link link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="item">
-                <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="address__item">
+                <a class="address__link link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-        <div class="join-part">
-          <p class="join-text"><strong>присоединяйтесь</strong></p>
-          <ul class="list list-social-link">
-            <li class="item">
-              <a class="link" href="">
-                <svg class="social-icon" width="20" height="20">
+        <div class="join">
+          <strong class="slogan">присоединяйтесь</strong>
+          <ul class="social-list list">
+            <li class="social-list__item social-list__item--inverse">
+              <a class="social-list__link link" href="">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social-list__item social-list__item--inverse">
+              <a class="social-list__link link" href="">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social-list__item social-list__item--inverse">
+              <a href="" class="social-list__link link">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="link">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social-list__item social-list__item--inverse">
+              <a href="" class="social-list__link link">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -361,17 +371,18 @@
           </ul>
         </div>
 
-        <div class="subscription-part">
-          <strong class="subscription-text">Подпишитесь на рассылку</strong>
-          <form class="subscription-form">
+        <div class="subscription">
+          <strong class="slogan">Подпишитесь на рассылку</strong>
+          <form class="form">
             <input
-              class="form-field"
+              class="form__input"
               type="email"
-              name="mail"
+              name="email-for-subscription"
               placeholder="E-mail"
+              required
             />
-            <button class="subscription-btn" type="submit">
-              Подписаться<svg class="icon" width="24" height="24">
+            <button class="button subscription__button" type="submit">
+              Подписаться<svg class="button__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
