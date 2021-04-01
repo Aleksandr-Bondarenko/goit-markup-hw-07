@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/main.min.css" />
   </head>
 
   <body>
@@ -40,7 +40,7 @@
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a
-                class="site-nav__link site-nav__link--current link"
+                class="site-nav__link site-nav__link_current link"
                 href="./index.html"
                 >Студия</a
               >
@@ -55,7 +55,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts list list">
+        <ul class="contacts list">
           <li class="contacts__item">
             <a class="contacts__link link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
@@ -240,7 +240,7 @@
                 height="260"
               />
               <div class="team__box">
-                <h3 class="team-name">Ольга Репина</h3>
+                <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__profesion">Frontend Developer</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
@@ -423,7 +423,7 @@
           <a
             class="logo page-footer__logo link animate__swing"
             href="./index.html"
-            >Web<span class="logo__part logo__part--inverse">Studio</span></a
+            >Web<span class="logo__part logo__part_inverse">Studio</span></a
           >
           <address class="address">
             <p class="address__description">г. Киев, пр-т Леси Украинки, 26</p>
@@ -444,28 +444,28 @@
         <div class="join">
           <strong class="slogan">присоединяйтесь</strong>
           <ul class="social-list list">
-            <li class="social-list__item social-list__item--inverse">
+            <li class="social-list__item social-list__item_inverse">
               <a class="social-list__link link" href="">
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-list__item--inverse">
+            <li class="social-list__item social-list__item_inverse">
               <a class="social-list__link link" href="">
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-list__item--inverse">
+            <li class="social-list__item social-list__item_inverse">
               <a href="" class="social-list__link link">
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item social-list__item--inverse">
+            <li class="social-list__item social-list__item_inverse">
               <a href="" class="social-list__link link">
                 <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
@@ -511,7 +511,7 @@
           <label class="modal-form__label" for="user-name">Имя</label>
           <div class="modal-form__field">
             <input
-              class="modal-form__input"
+              class="modal-form__input modal-form__data-input"
               id="user-name"
               type="text"
               name="user-name"
@@ -525,7 +525,7 @@
           <label class="modal-form__label" for="user-phone">Телефон</label>
           <div class="modal-form__field">
             <input
-              class="modal-form__input"
+              class="modal-form__input modal-form__data-input"
               id="user-phone"
               type="tel"
               name="user-phone"
@@ -540,7 +540,7 @@
           <label class="modal-form__label" for="user-email">Почта</label>
           <div class="modal-form__field">
             <input
-              class="modal-form__input"
+              class="modal-form__input modal-form__data-input"
               id="user-email"
               type="email"
               name="user-email"
@@ -554,7 +554,7 @@
             >Комментарий</label
           >
           <textarea
-            class="modal-form__input modal-form__comment-field"
+            class="modal-form__input modal-form__comment-input"
             name="user-comment"
             id="user-comment"
             placeholder="Введите текст"
@@ -568,7 +568,7 @@
                 type="checkbox"
               />
               <span class="agreement__custom-checkbox"></span>
-              Соглашаюсь с рассылкой и принимаю&nbsp
+              Соглашаюсь с рассылкой и принимаю &nbsp;
             </label>
             <a class="link agreement__link" href=""> Условия договора</a>
           </div>
