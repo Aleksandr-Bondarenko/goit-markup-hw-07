@@ -15,7 +15,7 @@
     margin-left: var(--primary-gap);
     width: 170px;
     height: 90px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms var(--animation-function);
     cursor: pointer;
 
     &:hover {
@@ -34,7 +34,7 @@
     align-items: center;
     color: var(--action-color);
     fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--animation-function);
 
     &:focus {
       fill: currentColor;

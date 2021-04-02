@@ -2,11 +2,8 @@
   &__label {
     display: inline-block;
     margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.167;
-    letter-spacing: 0.01em;
-    color: #757575;
+    @include font-style(400, 12px, 14px, 0.01em);
+    color: var(--paragraph-color);
     cursor: pointer;
 
     &:not(:first-child) {
@@ -24,7 +21,7 @@
     height: 18px;
     top: 10px;
     left: 11px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms var(--animation-function);
     .modal-form__input:focus + & {
       fill: var(--action-color);
     }
@@ -33,15 +30,12 @@
   &__input {
     display: block;
     width: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font-style(400, 16px, 20px);
     color: var(--main-title-color);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms var(--animation-function);
 
     &:focus {
       border-color: var(--action-color);
@@ -60,10 +54,7 @@
     resize: none;
 
     &::placeholder {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 1.166;
-      letter-spacing: 0.01em;
+      @include font-style(400, 12px, 14px, 0.01em);
       color: rgba(117, 117, 117, 0.5);
     }
   }
@@ -76,10 +67,7 @@
 
   &__text,
   &__link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.8;
-    letter-spacing: 0.03em;
+    @include font-style(400, 14px, 24px);
   }
 
   &__text {
@@ -102,9 +90,9 @@
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms var(--animation-function),
+      border-color 250ms var(--animation-function),
+      box-shadow 250ms var(--animation-function);
 
     .agreement__default-checkbox:checked + & {
       background-color: var(--action-color);

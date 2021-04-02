@@ -23,10 +23,7 @@
   }
 
   &__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.8;
-    letter-spacing: 0.03em;
+    @include font-style(400, 14px, 24px);
     color: var(--paragraph-color);
   }
 

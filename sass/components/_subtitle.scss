@@ -1,7 +1,4 @@
 .subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1721;
-  letter-spacing: 0.03em;
+  @include font-style(700, 14px, 16px);
   text-transform: uppercase;
 }
