@@ -319,12 +319,12 @@ img {
   border-top: none;
 }
 
-.overlay-wrap {
+.projects__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-wrap__text {
+.projects__description {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55556;
@@ -344,8 +344,8 @@ img {
   transition: transform 250ms var(--animation-function), -webkit-transform 250ms var(--animation-function);
 }
 
-.projects__item:hover .overlay-wrap__text,
-.projects__link:focus .overlay-wrap__text {
+.projects__item:hover .projects__description,
+.projects__link:focus .projects__description {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }

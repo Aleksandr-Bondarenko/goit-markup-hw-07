@@ -42,13 +42,13 @@
     border: 1px solid var(--project-border-color);
     border-top: none;
   }
-}
 
-.overlay-wrap {
-  position: relative;
-  overflow: hidden;
+  &__overlay {
+    position: relative;
+    overflow: hidden;
+  }
 
-  &__text {
+  &__description {
     @include font-style(400, 18px, 28px);
     position: absolute;
     bottom: 0;
